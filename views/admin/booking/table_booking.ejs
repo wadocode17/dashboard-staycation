@@ -1,8 +1,5 @@
 <!-- DataTales Example -->
 <div class="card shadow mb-4">
-  <div class="card-header py-3">
-    <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
-  </div>
   <div class="card-body">
     <div class="table-responsive">
       <table
@@ -26,7 +23,7 @@
           <% for(i = 0; i < booking.length; i++) { %>
           <tr>
             <td><%= i + 1 %></td>
-            <td>#<%= booking[i].invoice %></td>
+            <td>#00<%= booking[i].invoice %></td>
             <td>
               <%= booking[i].bookingStartDate.toLocaleString().split(',')[0] %>
               s/d <%= booking[i].bookingEndDate.toLocaleString().split(',')[0]
