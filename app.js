@@ -15,6 +15,8 @@ mongoose.connect("mongodb+srv://kikisaepulrmdni:mernstack@cluster0.mbt0c.mongodb
   useCreateIndex: true,
   useFindAndModify: false,
 });
+const expressGoogleAnalytics = require('express-google-analytics');
+const analytics = expressGoogleAnalytics('G-VGYKHF3KHK');
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
@@ -37,6 +39,7 @@ app.use(
   })
 );
 app.use(flash());
+app.use(analytics);
 app.use(cors());
 app.use(logger("dev"));
 app.use(express.json());
