@@ -16,7 +16,7 @@ mongoose.connect("mongodb+srv://kikisaepulrmdni:mernstack@cluster0.mbt0c.mongodb
   useFindAndModify: false,
 });
 const expressGoogleAnalytics = require('express-google-analytics');
-const analytics = expressGoogleAnalytics('G-VGYKHF3KHK');
+const analytics = expressGoogleAnalytics('2124193470');
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
