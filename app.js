@@ -39,7 +39,7 @@ app.use(
   })
 );
 app.use(flash());
-app.use(analytics);
+app.use(analytics());
 app.use(cors());
 app.use(logger("dev"));
 app.use(express.json());
